@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ListDrop from "./ListDrop";
+import ListDrop from "./partials/ListDrop";
 import MobNav from "./partials/MobNav";
 
 class NavBar extends Component {

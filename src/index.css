@@ -251,6 +251,32 @@ button{
 .exit-btn{
   background-color: inherit;
 }
+.mob-nav-box{
+  display: flex;
+  flex-direction: column;
+}
+.mob-nav-box .mob-btn-link{
+  text-align: left;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-ligth-gray);
+  color: var(--color-navy);
+  font-weight: 600;
+  font-size: 1.9rem;
+  font-family: 'Open Sans';
+}
+.mob-nav-box .mob-btn-link p {
+  margin: 1.5rem 2.5rem;
+  width: fit-content;
+}
+.mob-nav-box .mob-btn-link p .dark-arrow{
+  width: 2rem;
+}
+#RR-btn p {
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 
  
 

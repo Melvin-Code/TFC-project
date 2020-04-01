@@ -24,6 +24,14 @@ class MobNav extends Component {
     });
   };
 
+  change=()=>{
+      if(this.state.act===true){
+          return 'up'
+      }else{
+          return 'down'
+      }
+  }
+
   render() {
     return (
       <div id="mobnav" className="navbar">
@@ -49,7 +57,14 @@ class MobNav extends Component {
           </div>
           <div onClick={() => this.choice(3)} className='exit-box'>
               <button className='exit-btn'><img className='exit-btn-img' alt='exit burguer' src='/Assets/exit.svg'/></button>
+     
           </div>
+          </div>
+          <div className='mob-nav-box'>
+          <button className='mob-btn-link'><p>SIGN IN</p></button>
+          <button className='mob-btn-link' id='RR-btn' ><p>REALTOR RESOURCES<img className='dark-arrow' alt='drop arrow' src='/Assets/carrot(1).svg' /></p></button>
+          <button className='mob-btn-link'><p>CONTACT</p></button>
+          <button className='mob-btn-link'><p>REQUEST DEMO</p></button>
           </div>
         </div>
       </div>
@@ -57,32 +72,5 @@ class MobNav extends Component {
   }
 }
 
-{
-  /* <div className="button-box">
-  <div className="primary-button-box">
-    <button id="closing-cost" className="btn-links">
-      CLOSING COSTS
-    </button>
-    <button
-      onClick={() => this.toggle()}
-      id="drop-dwn"
-      className="btn-links"
-    >
-      REALTOR RESOURCES
-      <img
-        id={this.turn()}
-        className="arrow"
-        alt="drop-down arrow"
-        src="/Assets/arrow.svg"
-      />
-      {this.reaction()}
-    </button>
-    <button className="btn-links">CONTACT</button>
-  </div>
-  <div className="sub-button-box">
-    <button className="contract-submission">SUBMIT CONTRACT</button>
-    <button className="signin">SIGNIN</button>
-  </div>
-</div> */
-}
+
 export default MobNav;
