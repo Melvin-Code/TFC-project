@@ -23,6 +23,9 @@ code {
     monospace;
 }
 
+button{
+  border: none;
+}
 :root {
   --color-teal: #4A9EA6;
   --color-navy: #0E3D51;
@@ -65,8 +68,8 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 58vw;
-  
+  width: 75rem;
+  transition: all .5s;
 }
 
 
@@ -92,6 +95,7 @@ code {
 .navbar .button-box .primary-button-box .btn-links .arrow{
   color: var(--color-teal);
   padding-left: .5rem;
+  padding-right: .5rem;
 }
 #up{
   transform: rotate(180deg);
@@ -144,19 +148,113 @@ code {
   animation-duration: .5s;
 }
 
-@keyframes fade{
-  0%{
-    opacity: -1;
-  }
-  100%{
-    opacity: 1;
-  }
-}
 .navbar .button-box .primary-button-box .btn-links .drop-dwn-list .list-item{
   margin: 1rem;
 }
 
+@keyframes fade{
+  0%{
+    opacity: -1;
+  }  
+  100%{
+    opacity: 1;
+  }  
+} 
+@media only screen and (max-width: 850px) {
+  .navbar .button-box{
+    width: 60rem;
+  }
+  .navbar .button-box .primary-button-box .btn-links{
+    text-align: left;
+    
+  }
+  .navbar .button-box .sub-button-box .contract-submission{
+    margin: 0 2rem;
+  }
+  #drop-dwn{
+    width: 10rem;
+    margin: 0 2rem;
+  }
+  #closing-cost{
+    width: 6rem
+  }
+  .navbar .button-box .primary-button-box .btn-links .drop-dwn-list{
+    bottom: -40%;
+  }
+  .navbar .button-box .primary-button-box{
+    width: fit-content;
+    justify-content: center;
+  }
+  .navbar .button-box .sub-button-box{
+    width: fit-content;
+  }
+}
+.navbar .mob-btn-box{
+  display: flex;
+ 
+  align-items: center;
+  width: fit-content;
+}
+.navbar .mob-btn-box button{
+  border: none; 
+  background: none;
+  margin: 0 2rem;
+}
+#static{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+#show{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  animation-name: moveOnClick;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  background-color: var(--color-white);
+}
+#hide{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  transform: translateX(100%);
+  animation-name: moveOnClick2;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  background-color: var(--color-white);
+}
+@keyframes moveOnClick {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveOnClick2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.exit-box{
+  display: flex;
+  align-items: center;
+  margin: 0 3rem;
+}
+.exit-btn{
+  background-color: inherit;
+}
 
+ 
+
+   
 
 
 /* ///// NAV BAR ///// */
