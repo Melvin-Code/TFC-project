@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +22,143 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --color-teal: #4A9EA6;
+  --color-navy: #0E3D51;
+  --color-white: #ffffff;
+  --color-dark-bluegray: #6F8B98;
+  --color-orange: #FEC051;
+  --color-regular-bluegray: #9FB1BB;
+  --color-maintext-blue: #13506C;
+  --color-darker-gray: #84898F;
+  --color-black: #05161E;
+  --color-white2: #F5F7F8;
+  --color-white3: #F2F5F7;
+  --color-red: #F0665C;
+  --color-ligth-bluegray: #BCCDD6;
+  --color-middle-gray: #00000029;
+  --color-white4: #F8FAFB;
+  --color-ligth-gray: #ECECEC;
+
+}
+
+/* ///// NAV BAR ///// */
+/* ///// NAV BAR ///// */
+/* ///// NAV BAR ///// */
+.navbar {
+  display: flex;
+  border-bottom: 1px solid var(--color-ligth-gray);
+  justify-content: space-between;
+  height: 6.5rem;
+}
+.navbar .logo-box{
+  display: flex;
+  align-items: center;
+}
+.navbar .logo-box .logo{
+  height: 4.3rem;
+  padding-left: 2rem;
+}
+
+.navbar .button-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 58vw;
+  
+}
+
+
+.navbar .button-box .primary-button-box {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  position: relative;
+}
+
+.navbar .button-box .primary-button-box .btn-links {
+  border: none;
+  background-color: inherit;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+
+  letter-spacing: 0;
+  color: var(--color-maintext-blue);
+  
+  opacity: 1;
+}
+.navbar .button-box .primary-button-box .btn-links .arrow{
+  color: var(--color-teal);
+  padding-left: .5rem;
+}
+#up{
+  transform: rotate(180deg);
+}
+.navbar .button-box .sub-button-box {
+  display: flex;
+  width: inherit;
+  justify-content: space-around;
+
+}
+
+.navbar .button-box .sub-button-box .contract-submission {
+  margin-left: 6rem;
+  background: var(--color-red) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+  width: 15rem;
+  height: 4.3rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-white);
+  
+}
+
+.navbar .button-box .sub-button-box .signin {
+  margin-right: 2rem;
+  background: var(--color-white) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--color-teal);
+  border-radius: 5px;
+  opacity: 1;
+  font-size: 1.3rem;
+  width: 93px;
+  height: 4.3rem;
+  color: var(--color-teal);
+}
+
+ .navbar .button-box .primary-button-box .btn-links .drop-dwn-list{
+  position: absolute;
+  background: var(--color-white3) 0% 0% no-repeat padding-box;
+  bottom: -130%;
+  transform: translateY(100%);
+  left: 48%;
+  text-align: left;
+  list-style: none;
+  width: fit-content;
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: -1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.navbar .button-box .primary-button-box .btn-links .drop-dwn-list .list-item{
+  margin: 1rem;
+}
+
+
+
+
+/* ///// NAV BAR ///// */
+/* ///// NAV BAR ///// */
+/* ///// NAV BAR ///// */
