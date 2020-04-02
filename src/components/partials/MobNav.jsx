@@ -1,14 +1,30 @@
 import React, { Component } from "react";
+import MobListDrop from "./MobListDrop";
 
 class MobNav extends Component {
   state = {
     show: "show",
     hide: "hide",
     onLoad: "static",
-    choice: 1
+    choice: 1,
+    act: true,
+    menuLoad: true
+    
   };
 
+  mobChoice=()=>{
+    
+    if(this.state.menuLoad === true){
+      return 'firstload'
+    }else if (this.state.act === true){
+      return 'hided'
+    }else if (this.state.act === false){
+      return 'expand'
+    }
+  }
+
   showOrHide = () => {
+    
     if (this.state.choice === 1) {
       return this.state.onLoad;
     } else if (this.state.choice === 2) {
@@ -20,17 +36,32 @@ class MobNav extends Component {
 
   choice = num => {
     this.setState({
+      menuLoad: true,
+      act: true,
+    })
+
+    this.setState({
       choice: num
     });
+
   };
 
-  change=()=>{
-      if(this.state.act===true){
-          return 'up'
-      }else{
-          return 'down'
-      }
-  }
+  toggle = () => {
+    this.setState({
+      act: !this.state.act
+    });
+    this.setState({
+      menuLoad: false
+    })
+  };
+
+  change = () => {
+    if (this.state.act === true) {
+      return "up";
+    } else {
+      return "down";
+    }
+  };
 
   render() {
     return (
@@ -50,27 +81,55 @@ class MobNav extends Component {
             />
           </button>
         </div>
-        <div id={this.showOrHide()} >
-        <div className="navbar">
-          <div className="logo-box">
-            <img alt="Logo" src="/Assets/logo.png" className="logo"></img>
+        <div id={this.showOrHide()}>
+          <div className="navbar">
+            <div className="logo-box">
+              <img alt="Logo" src="/Assets/logo.png" className="logo"></img>
+            </div>
+            <div onClick={() => this.choice(3)} className="exit-box">
+              <button className="exit-btn">
+                <img
+                  className="exit-btn-img"
+                  alt="exit burguer"
+                  src="/Assets/exit.svg"
+                />
+              </button>
+            </div>
           </div>
-          <div onClick={() => this.choice(3)} className='exit-box'>
-              <button className='exit-btn'><img className='exit-btn-img' alt='exit burguer' src='/Assets/exit.svg'/></button>
-     
-          </div>
-          </div>
-          <div className='mob-nav-box'>
-          <button className='mob-btn-link'><p>SIGN IN</p></button>
-          <button className='mob-btn-link' id='RR-btn' ><p>REALTOR RESOURCES<img className='dark-arrow' alt='drop arrow' src='/Assets/carrot(1).svg' /></p></button>
-          <button className='mob-btn-link'><p>CONTACT</p></button>
-          <button className='mob-btn-link'><p>REQUEST DEMO</p></button>
+          <div className="mob-nav-box">
+            <button className="mob-btn-link">
+              <p>SIGN IN</p>
+            </button>
+            <button
+              onClick={() => this.toggle()}
+              className="mob-btn-link"
+              id="RR-btn"
+            >
+              <p>
+                REALTOR RESOURCES
+                <img
+                  id={this.change()}
+                  className="dark-arrow"
+                  alt="drop arrow"
+                  src="/Assets/carrot(1).svg"
+                />
+              </p>
+            </button>
+            
+                <MobListDrop mobChoice={this.mobChoice}/>
+           
+            <button className="mob-btn-link">
+              <p>CONTACT</p>
+            </button>
+            <button id='demo' className="mob-btn-link">
+              <p>REQUEST DEMO</p>
+            </button>
+            <div className='bug-cover'></div>
           </div>
         </div>
       </div>
     );
   }
 }
-
 
 export default MobNav;
