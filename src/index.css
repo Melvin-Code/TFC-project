@@ -731,7 +731,30 @@ width: 65rem;
   .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list #pusher{
     margin: 0;
   }
-  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-content{
+    width: 39rem;
+    height: auto;
+    font-size: 2rem;
+    margin: 2rem 0 2rem 5.6rem;
+  }
+  .section2 .sec2-below-box{
+    flex-direction: column;
+    height: 28rem;
+    
+  }
+  .section2 .sec2-below-box .below-box-text{
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+    width: 40rem;
+  }
+  .section2 .sec2-below-box .below-box-button{
+    margin: 0;
+    width: 27rem;
+    height: 6.5rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
 
 }
 
