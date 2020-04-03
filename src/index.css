@@ -74,6 +74,10 @@ button {
   border-bottom: 1px solid var(--color-ligth-gray);
   justify-content: space-between;
   height: 6.5rem;
+  position: fixed;
+  z-index: 30;
+    background: white;
+    width: 100vw;
 }
 .navbar .logo-box {
   display: flex;
@@ -373,6 +377,7 @@ button {
   justify-content: space-around;
   position: relative;
   height: 70.4rem;
+  padding-top: 7rem;
 }
 .section1 .sec1-left-box {
   display: flex;
@@ -524,6 +529,12 @@ button {
      width: 25rem;
      margin: 0;
    }
+   #mob-c-box .mob-left-phone{
+    margin: 5rem 1.5rem 0 0;
+   }
+   #mob-c-box .mob-rigth-phone{
+    margin: 0 0 9rem 0;
+   }
    .section1 .sec1-rigth-box {
      width: 100%;
      text-align: center;
@@ -573,3 +584,161 @@ button {
 /* ///// Section 1 ///// */
 /* ///// Section 1 ///// */
 /* ///// Section 1 ///// */
+
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 0 0;
+}
+.section2 .sec2-upper-box{
+  display: flex;
+  justify-content: space-around;
+}
+.section2 .sec2-upper-box .sec2-left-box{
+  height: 53rem
+}
+.section2 .sec2-upper-box .sec2-left-box .hand-phone{
+  width: 30rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title{
+  width: 40rem;
+  height: fit-content;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title .main-title{
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--color-navy);
+  padding: 0 0 1rem 0;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title .sub-title{
+  color: rgb(254, 192, 81);
+  font-weight: 700;
+  font-size: 1.2rem;
+  width: 35rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 40rem;
+width: 65rem;
+
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item{
+  display: flex;
+  flex-direction: column;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list #pusher{
+  margin-left: 7rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-title{
+  display: flex;
+  align-items: center;
+  color: var(--color-navy);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-title .pocket-title-img{
+  width: 2.4rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-title .pocket-title-text{
+  margin: 0 0 0 .8rem;
+}
+.section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-content{
+  color: var(--color-navy);
+  font-weight: 400;
+  width: 28rem;
+  margin: 1.5rem 0 2.5rem 0;
+  font-size: 1.2rem;
+}
+.section2 .sec2-below-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-navy);
+  height: 7rem;
+  font-weight: 700;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  
+}
+.section2 .sec2-below-box .below-box-text{
+  width: 32rem;
+  text-align: left;
+  margin-left: 10%;
+}
+.section2 .sec2-below-box .below-box-button{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 5px;
+  height: 4rem;
+  width: 13rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 10% 0 0 ;
+}
+@media only screen and (max-width: 415px){
+  
+  .section2 .sec2-upper-box{
+    flex-direction: column-reverse;
+    
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title .main-title{
+    font-size: 3.5rem;
+    width: 48rem;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title .sub-title{
+    font-size: 2.2rem;
+    width: 48rem;
+    margin-bottom: 4rem;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list{
+    flex-wrap: nowrap;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item{
+    width: 48rem;
+    height: auto;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-title .pocket-title-text{
+    font-size: 2.5rem;
+    margin-left: 1.3rem;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .pocket-title .pocket-title-img{
+    width: 4.3rem;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list #pusher{
+    margin: 0;
+  }
+  .section2 .sec2-upper-box .sec2-rigth-box .sec2-pocket-list .pocket-item .
+
+}
+
+
+
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */
+/* ///// Section 2 ///// */

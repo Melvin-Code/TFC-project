@@ -13,12 +13,12 @@ class MobSection1 extends Component {
           </div>
           <div id="mob-c-box" className="sec1-center-box">
             <img
-              className="left-phone"
+              className="mob-left-phone"
               alt="left phone"
               src="/Assets/transactions@2x.png"
             ></img>
             <img
-              className="rigth-phone"
+              className="mob-rigth-phone"
               alt="rigth phone"
               src="/Assets/dashboard@2x.png"
             ></img>
