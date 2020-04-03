@@ -46,7 +46,7 @@ class NavBar extends Component {
                 id="drop-dwn"
                 className="btn-links"
               >
-                REALTOR RESOURCES
+                <p>REALTOR RESOURCES</p>
                 <img
                   id={this.turn()}
                   className="arrow"
