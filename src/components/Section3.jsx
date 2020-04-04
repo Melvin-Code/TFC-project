@@ -103,16 +103,16 @@ class Section3 extends Component {
               <p className="dlbox-sub-text">
                 Drive realtors to your company, beat the big box title
                 companies, become more efficient, move money more securely, free
-                to title agents, and no new costs for buyers/sellers.
+                to title agents, and no new costs for buyers/ sellers.
               </p>
               <button className="dlbox-button">Request Demo</button>
             </div>
             <div className="down-rigth-box">
-              {/* <img
+              <img
                 className="drbox-img"
                 alt="mac book"
                 src="/Assets/titleleap_dashboard_macbook@2x.png"
-              /> */}
+              />
             </div>
           </div>
         </div>
