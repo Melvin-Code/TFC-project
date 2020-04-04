@@ -1121,3 +1121,121 @@ button {
 /* ///// Section 3 ///// */
 /* ///// Section 3 ///// */
 /* ///// Section 3 ///// */
+
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+
+.section4{
+  background: transparent url('Background@2.png') 0% 0% no-repeat padding-box;
+  background-size: cover;
+  height: 70rem;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .sec4-top-box{
+  color: var(--color-white);
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 40rem;
+}
+.section4 .sec4-dwn-box {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 15px;
+  width: 35rem;
+  height: 50rem;
+  margin-top: 4rem;
+}
+.section4 .sec4-dwn-box .dwn-box-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  align-items: center;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-top{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 3rem;
+
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center{
+  display: flex;
+  display: flex;
+    flex-direction: column;
+    
+    width: 27rem;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #9FB1BB;
+  border-radius: 10px;
+  height: 3rem;
+  margin: .5rem;
+  position: relative;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input img {
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input .select{
+  width: 25.8rem;
+  height: 3rem;
+  border-radius: 15px;
+  position: relative;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input .select .state{
+  color: #757575;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 1.5rem;
+  font-size: 1.5rem;
+    font-weight: 500;
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input #state{
+  -webkit-appearance: none;
+  border: none;
+  color: #757575;
+  width: 25.75rem;
+  height: 3rem;
+  border-radius: 15px;
+  background: transparent;
+}
+
+.section4 .sec4-dwn-box .dwn-box-form .form-dwn{
+  background-color: var(--color-orange);
+  border-radius: 5px;
+  width: 26.1rem;
+  height: 4rem;
+  color: #FFFFFF;
+text-transform: uppercase;
+font-weight: 700;
+margin-top: 3rem;
+}
+@media only screen and (max-width: 415px){
+  .section4 .sec4-top-box{
+    font-size: 2.8rem;
+    width: 45rem;
+  }
+  .section4{
+    background: transparent url('./Background@2x.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+  }
+}
+
+
+
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
