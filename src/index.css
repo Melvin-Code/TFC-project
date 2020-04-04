@@ -1209,6 +1209,10 @@ border-radius: 15px;
   height: 3rem;
   border-radius: 15px;
   background: transparent;
+  
+}
+.section4 .sec4-dwn-box .dwn-box-form .form-center .form-input #state .form-option{
+  background-color: var(--color-white);
 }
 
 .section4 .sec4-dwn-box .dwn-box-form .form-dwn{
@@ -1229,6 +1233,39 @@ margin-top: 3rem;
   .section4{
     background: transparent url('./Background@2x.png') 0% 0% no-repeat padding-box;
     background-size: cover;
+    height: 90rem
+  }
+  .section4 .sec4-dwn-box {
+    width: 45rem;
+    height: 70rem;
+  }
+  .section4 .sec4-dwn-box .dwn-box-form{
+    width: 45rem;
+    height: 70rem;
+  }
+  .section4 .sec4-dwn-box .dwn-box-form .form-top{
+    font-size: 2.5rem;
+  }
+  .section4 .sec4-dwn-box .dwn-box-form .form-center{
+    width: 40rem;
+  }
+  .section4 .sec4-dwn-box .dwn-box-form .form-center .form-input{
+    height: 5rem;
+  }
+  /* .section4 .sec4-dwn-box .dwn-box-form .form-center #mob-form{
+
+  } */
+  .section4 .sec4-dwn-box .dwn-box-form .form-center .form-input .select{
+    height: 5rem;
+  }
+  .section4 .sec4-dwn-box .dwn-box-form .form-center .form-input .select #state{
+    height: 5rem;
+    width: 38.8rem;
+
+  }
+  .section4 .sec4-dwn-box .dwn-box-form .form-dwn{
+    height: 7rem;
+    width: 38.8rem;
   }
 }
 
