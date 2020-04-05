@@ -462,7 +462,7 @@ button:hover{
 .section1 .sec1-center-box .left-phone {
   margin: 5rem 1.5rem 0 0;
   animation-name: goingup;
-  animation-delay: .5s;
+  animation-delay: .2s;
   animation-duration: 2s;
 }
 
@@ -470,7 +470,7 @@ button:hover{
   margin: 0 0 9rem 0;
   animation-name: goingdown;
   animation-duration: 2s;
-  animation-delay: .5s;
+  animation-delay: .2s;
 }
 @keyframes goingup {
   0% {
