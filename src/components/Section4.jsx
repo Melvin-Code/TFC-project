@@ -12,7 +12,7 @@ class Section4 extends Component {
     axios.post("https://ironrest.herokuapp.com/TFC", {
       item: {
         firstName: this.state.name,
-        lastName: this.state.lastName,
+        lastName: this.state.lastname,
         email: this.state.email,
         phone: this.state.phone,
         company: this.state.company,
