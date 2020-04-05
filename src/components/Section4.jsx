@@ -8,7 +8,7 @@ class Section4 extends Component {
   }
   handleSubmit=(e)=>{
     e.preventDefault()
-    this.mailer()
+    
     axios.post("https://ironrest.herokuapp.com/TFC", {
       item: {
         firstName: this.state.name,
