@@ -358,11 +358,13 @@ button:hover{
   height: 0rem;
   animation-name: hiding;
   animation-duration: 0.5s;
+  animation-delay: .2s;
 }
 .mob-nav-box #expand {
   height: fit-content;
   animation-name: expanding;
   animation-duration: .5s;
+  animation-delay: .2s;
 }
 @keyframes hiding {
   0% {
@@ -444,6 +446,7 @@ button:hover{
   font-size: 1rem;
   font-weight: 600;
   font-family: "Open Sans";
+  cursor: pointer;
 }
 
 .section1 .sec1-left-box .video-link .play-circle {
