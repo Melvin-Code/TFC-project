@@ -12,12 +12,12 @@ class Section4 extends Component {
             <div className='dwn-box-form'>
               <h4 className='form-top'>Tell us a bit about yourself</h4>
               <form className='form-center'>
-                <input className='form-input' type="text" name="name" placeholder="    First Name" />
-                <input className='form-input' type="text" name="laast-name" placeholder="    Last Name" />
-                <input className='form-input' type="text" name="email" placeholder="    Email" />
-                <input className='form-input' type="tel" name="phone" placeholder="    Phone Number" />
-                <input className='form-input' type="text" name="company" placeholder="    Company Name" />
-                <fieldset className='form-input'>
+                <input className='form-input' type="text" name="name" placeholder="First Name" />
+                <input className='form-input' type="text" name="laast-name" placeholder="Last Name" />
+                <input className='form-input' type="text" name="email" placeholder="Email" />
+                <input className='form-input' type="tel" name="phone" placeholder="Phone Number" />
+                <input className='form-input' type="text" name="company" placeholder="Company Name" />
+                <fieldset id='field-s' className='form-input'>
                     <img alt='drop arrow' src='/Assets/Carrot2.svg' />
                   <div 
                   className='select'>
@@ -89,7 +89,7 @@ class Section4 extends Component {
                 <input className='form-input'
                   type="text"
                   name="role"
-                  placeholder="    What is your role"
+                  placeholder="What is your role"
                 />
               </form>
               <button className='form-dwn'>Submit Request</button>

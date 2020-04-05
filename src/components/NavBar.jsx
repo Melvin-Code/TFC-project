@@ -34,7 +34,7 @@ class NavBar extends Component {
       return (
         <div className="navbar">
           <div className="logo-box">
-            <img alt="Logo" src="/Assets/logo.png" className="logo"></img>
+            <img alt="Logo" src="/Assets/logo2.png" className="logo"></img>
           </div>
           <div className="button-box">
             <div className="primary-button-box">
