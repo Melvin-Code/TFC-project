@@ -7,7 +7,7 @@ import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import Footer from './components/Footer'
 import Submit from './components/Submit';
-
+import axios from 'axios'
 
 class App extends Component {
   resolution = () => {
@@ -17,6 +17,13 @@ class App extends Component {
   
     }
   }
+  // componentDidMount() {
+  //   axios.post("https://ironrest.herokuapp.com/createCollection/TFC").catch(
+  //     err => {
+  //       console.log(err);
+  //     }
+  //   );
+  // }
   render() {
     return (
       <div className='App'>

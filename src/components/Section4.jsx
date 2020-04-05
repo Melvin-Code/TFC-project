@@ -1,6 +1,37 @@
 import React, { Component } from "react";
-
+import axios from 'axios'
+import nodemailer from 'nodemailer'
 class Section4 extends Component {
+
+  state={
+
+  }
+  handleSubmit=(e)=>{
+    e.preventDefault()
+    this.mailer()
+    axios.post("https://ironrest.herokuapp.com/TFC", {
+      item: {
+        firstName: this.state.name,
+        lastName: this.state.lastName,
+        email: this.state.email,
+        phone: this.state.phone,
+        company: this.state.company,
+        state: this.state.state,
+        role: this.state.role
+      }
+    }).then(res => {
+      console.log(res.data)
+    }).catch(err => {
+      console.log(err)
+    });
+    document.getElementById("forms").reset()
+  };
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render() {
     return (
       <section>
@@ -11,18 +42,18 @@ class Section4 extends Component {
           <div className='sec4-dwn-box'>
             <div className='dwn-box-form'>
               <h4 className='form-top'>Tell us a bit about yourself</h4>
-              <form className='form-center'>
-                <input className='form-input' type="text" name="name" placeholder="First Name" />
-                <input className='form-input' type="text" name="laast-name" placeholder="Last Name" />
-                <input className='form-input' type="text" name="email" placeholder="Email" />
-                <input className='form-input' type="tel" name="phone" placeholder="Phone Number" />
-                <input className='form-input' type="text" name="company" placeholder="Company Name" />
+              <form onSubmit={this.handleSubmit} id='forms' className='form-center' action="https://formspree.io/melvingonzale470@gmail.com" method="POST">
+                <input onChange={this.handleChange} className='form-input' type="text" name="name" placeholder="First Name" />
+                <input onChange={this.handleChange} className='form-input' type="text" name="lastname" placeholder="Last Name" />
+                <input onChange={this.handleChange} className='form-input' type="text" name="email" placeholder="Email" />
+                <input onChange={this.handleChange} className='form-input' type="tel" name="phone" placeholder="Phone Number" />
+                <input onChange={this.handleChange} className='form-input' type="text" name="company" placeholder="Company Name" />
                 <fieldset id='field-s' className='form-input'>
                     <img alt='drop arrow' src='/Assets/Carrot2.svg' />
                   <div 
                   className='select'>
                      {/* <p className="state">State</p>  */}
-                     <select id="state" name="state">
+                     <select onChange={this.handleChange} id="state" name="state">
                     <option className='form-option' value="---">&#160; &#160; State</option>
                     <option className='form-option' value="Alabama">&#160; &#160; Alabama</option>
                     <option className='form-option' value="Alaska">&#160; &#160; Alaska</option>
@@ -86,13 +117,13 @@ class Section4 extends Component {
                   </select>
                   </div>
                 </fieldset>
-                <input className='form-input'
+                <input onChange={this.handleChange} className='form-input'
                   type="text"
                   name="role"
                   placeholder="What is your role"
                 />
+              <button className='form-dwn' value='send' type='submit'>Submit Request</button>
               </form>
-              <button className='form-dwn'>Submit Request</button>
             </div>
           </div>
         </div>
