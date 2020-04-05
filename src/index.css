@@ -565,6 +565,7 @@ button:focus{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    z-index: -2;
   }
   .section1 .sec1-rigth-box .demo-box .demo {
     background-color: var(--color-orange);
@@ -609,6 +610,7 @@ button:focus{
 .section2 .sec2-upper-box {
   display: flex;
   justify-content: space-around;
+  z-index: -2;
 }
 .section2 .sec2-upper-box .sec2-left-box {
   height: 53rem;
@@ -620,6 +622,7 @@ button:focus{
   display: flex;
   flex-direction: column;
   text-align: left;
+  
 }
 .section2 .sec2-upper-box .sec2-rigth-box .sec2-rbox-title {
   width: 40rem;
@@ -703,6 +706,7 @@ button:focus{
   color: var(--color-white);
   font-size: 1.2rem;
   width: 100%;
+  z-index: -2;
 }
 .section2 .sec2-below-box .below-box-text {
   width: 32rem;
@@ -814,6 +818,7 @@ button:focus{
 /* ///// Section 3 ///// */
 .section3 {
   margin-top: 9rem;
+  z-index: -2;
 }
 
 .section3 .up-box {
@@ -828,6 +833,7 @@ button:focus{
   margin: 0 32rem 0 0;
   justify-content: flex-start;
   width: 65rem;
+  z-index: -2;
 }
 .section3 .up-box .up-box-controller .left-up-box {
   margin: 0 0 0 6rem;
@@ -894,6 +900,7 @@ button:focus{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: -3;
 }
 .section3 .centered-box .cbox-dwn .cbox-dwn-video {
   position: relative;
@@ -1049,6 +1056,7 @@ button:focus{
   }
   .section3 .centered-box .cbox-dwn {
     flex-direction: column-reverse;
+    z-index: -2;
   }
   .section3 .centered-box .cbox-dwn .cbox-rigth {
     width: -webkit-fill-available;
@@ -1099,19 +1107,25 @@ button:focus{
   #vbox-organizer {
     display: flex;
     flex-direction: column;
+    z-index: -2;
   }
   .section3 .cbox-down-box {
     margin-top: 4.5rem;
     height: auto;
     flex-direction: column-reverse;
   }
+  .section3 .cbox-down-box .down-rigth-box {
+    z-index: -2;
+  }
   .section3 .cbox-down-box .down-rigth-box .drbox-img {
     width: 45rem;
     margin-top: 10rem;
+    z-index: -2;
   }
   .section3 .cbox-down-box .down-left-box {
     align-items: center;
     margin: 0;
+    z-index: -2;
   }
   .section3 .cbox-down-box .down-left-box .dlbox-main-text {
     font-size: 3.2rem;
@@ -1150,6 +1164,7 @@ button:focus{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .section4 .sec4-top-box{
   color: var(--color-white);
@@ -1407,7 +1422,7 @@ margin-top: 3rem;
   height: 13rem;
   display: flex;
   justify-content: center;
-  z-index: 5;
+  z-index: -1;
 }
 .submit-box .contract-submit{
   background: var(--color-red) 0% 0% no-repeat padding-box;
