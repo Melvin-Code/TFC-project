@@ -49,10 +49,23 @@ button {
 /* ///// Global code ///// */
 /* ///// Global code ///// */
 /* ///// Global code ///// */
-@media only screen and (max-width: 900px) {
+button:active{
+  opacity: .5;
+}
+button:focus{
+  outline: none;
+}
+@media only screen and (max-width: 1060px) {
   html {
     font-size: 55%;
+    transition: all .5s;
   }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 40%;
+  }
+ 
 }
 @media only screen and (max-width: 670px) {
   html {
@@ -113,7 +126,6 @@ button {
   letter-spacing: 0;
   color: var(--color-maintext-blue);
 
-  opacity: 1;
 }
 .navbar .button-box .primary-button-box .btn-links .arrow {
   color: var(--color-teal);
@@ -133,7 +145,7 @@ button {
   margin-left: 6rem;
   background: var(--color-red) 0% 0% no-repeat padding-box;
   border-radius: 5px;
-  opacity: 1;
+  
   width: 15rem;
   height: 4.3rem;
   border: none;
@@ -149,7 +161,7 @@ button {
   background: var(--color-white) 0% 0% no-repeat padding-box;
   border: 2px solid var(--color-teal);
   border-radius: 5px;
-  opacity: 1;
+  
   font-size: 1.3rem;
   width: 93px;
   height: 4.3rem;
@@ -288,6 +300,7 @@ button {
 .mob-nav-box {
   display: flex;
   flex-direction: column;
+  margin: 6.5rem 0 0 0;
 }
 .mob-nav-box .mob-btn-link {
   text-align: left;
@@ -507,7 +520,7 @@ button {
 .section1 .sec1-rigth-box .rigth-desktopApp img {
   width: 13rem;
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 40%;
   }
@@ -707,7 +720,7 @@ button {
   text-transform: uppercase;
   margin: 0 10% 0 0;
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 600px) {
   .section2 .sec2-upper-box {
     flex-direction: column-reverse;
   }
@@ -1004,7 +1017,7 @@ button {
 .section3 .cbox-down-box .down-rigth-box .drbox-img {
   width: 60rem;
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 600px) {
   .section3 .up-box .up-box-controller {
     flex-direction: column-reverse;
     width: -webkit-fill-available;
@@ -1112,7 +1125,7 @@ button {
     width: 25rem;
     height: 6rem;
     font-size: 2rem;
-    margin-top: 3rem;
+    margin: 3rem;
   }
 }
 
@@ -1225,7 +1238,7 @@ text-transform: uppercase;
 font-weight: 700;
 margin-top: 3rem;
 }
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 600px){
   .section4 .sec4-top-box{
     font-size: 2.8rem;
     width: 45rem;
@@ -1233,7 +1246,8 @@ margin-top: 3rem;
   .section4{
     background: transparent url('./Background@2x.png') 0% 0% no-repeat padding-box;
     background-size: cover;
-    height: 90rem
+    height: 95rem;
+    z-index: 6;
   }
   .section4 .sec4-dwn-box {
     width: 45rem;
@@ -1268,11 +1282,145 @@ margin-top: 3rem;
     width: 38.8rem;
   }
 }
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+/* ///// Section 4 ///// */
+
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--color-white2);
+}
+.footer .footer-up{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 400;
+  margin: 5rem;
+}
+.footer .footer-up .f-logo{
+  height: 6.5rem;
+}
+.footer .footer-up .fbox-heading{
+  height: 6.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.footer .footer-up .fbox-list{
+  list-style: none;
+}
+.footer .footer-up #aligner{
+  margin-left: 1rem;
+}
+.footer .footer-up .fbox-list .fbox-list-item{
+  margin: 0 0 1.5rem 0 ;
+  
+}
+.footer .footer-up .footer-box .fbox-form{
+  display: flex;
+  
+}
+.footer .footer-up .footer-box .fbox-form .fbox-input{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px  solid #9FB1BB;
+  border-right: none;
+  border-radius: 10px 0px 0px 10px;
+  height: 3rem;
+  
+}
+.footer .footer-up .footer-box .fbox-form .fbox-button{
+  background-color: var(--color-teal);
+  width: 4rem;
+  border-radius: 0 10px 10px 0;
+}
+.footer .footer-up .footer-box .social-icon{
+  margin: 3.5rem 2rem 0 0;
+}
+.footer .footer-dwn .fdwn-text{
+  color: #84898F;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 600px){
+  .footer .footer-up{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-up .footer-box {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer .footer-up .footer-box div{
+    position: relative;
+    height: 13.5rem;
+    width: 100%;
+  }
+  .footer .footer-up .f-logo{
+    height: 12.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .footer .footer-up .fbox-heading{
+    height: 4.5rem;
+    margin-top: 4rem;
+  }
+  .footer .footer-up .footer-box .fbox-form .fbox-input{
+    height: 5rem;
+    width: 30rem;
+  }
+  .footer .footer-up .footer-box .fbox-form .fbox-button{
+    width: 6rem;
+  }
+  .footer .footer-dwn .fdwn-text{
+    font-size: 1.3rem;
+  }
+}
 
 
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
+/* ///// Footer ///// */
 
-/* ///// Section 4 ///// */
-/* ///// Section 4 ///// */
-/* ///// Section 4 ///// */
-/* ///// Section 4 ///// */
-/* ///// Section 4 ///// */
+/* ///// Submit ///// */
+.submit-box {
+  background-color: var(--color-white);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+.submit-box .contract-submit{
+  background: var(--color-red) 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  width: 30rem;
+  height: 7rem;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-white);
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+}
+/* ///// Submit ///// */
+

@@ -6,7 +6,7 @@ class Section4 extends Component {
       <section>
         <div className='section4'>
           <div className='sec4-top-box'>
-            <h3 top-box-text>Ready for a better closing? Let us show you what TitleLeap can do.</h3>
+            <h3 className='top-box-text'>Ready for a better closing? Let us show you what TitleLeap can do.</h3>
           </div>
           <div className='sec4-dwn-box'>
             <div className='dwn-box-form'>
